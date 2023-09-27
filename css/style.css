@@ -29,7 +29,7 @@
             float: right;
             border: 1px solid cyan;
             background-color: rgb(0, 209, 209);
-            width: 20%;
+            width: 100%;
             height: 100vh;
             position: relative;
         }
@@ -64,3 +64,26 @@
             text-decoration: none;
             font-size: 24px;
         }
+
+/* grid panel */
+.container_grid {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr;
+    grid-auto-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    height: 100vh;
+  }
+  
+  .header { grid-area: 1 / 1 / 2 / 5; }
+  
+  .menu { grid-area: 1 / 4 / 5 / 5; }
+  
+  .text-erea-1 { grid-area: 2 / 1 / 3 / 4;
+        color: brown;
+        font-size: 50px;
+        font-family: sans-serif;
+    }
+  
+  .text-erea-2 { grid-area: 4 / 1 / 5 / 4; }
+  
