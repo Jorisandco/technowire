@@ -93,14 +93,12 @@
     grid-area: 2 / 1 / 3 / 4;
     color: rgb(255, 255, 255);
     font-size: 25px;
-    font-family: "Comic Sans MS";
 }
 
 .text-erea-2 {
     grid-area: 4 / 1 / 5 / 4;
     color: rgb(255, 255, 255);
     font-size: 25px;
-    font-family: "Comic Sans MS";
 }
 
 .textbox {
@@ -110,4 +108,10 @@
     margin: 15px;
     padding: 5px;
     box-shadow: 2px 2px rgba(0, 0, 0, 0.427);
+}
+
+
+/* set font-type of all text */
+.text{
+    font-family: "Comic Sans MS";
 }
