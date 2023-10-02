@@ -4,30 +4,29 @@
 }
 
 
-/* grid */
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 10px 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 15px 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-auto-columns: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     height: 100vh;
     grid-template-areas:
-        "header header header header header header header header header header"
-        "header header header header header header header header header header"
-        ". . . info-year info-year color info-year-2 info-year-2 tab-menu tab-menu"
-        ". . . info-year info-year color info-year-2 info-year-2 tab-menu tab-menu"
-        ". . . info-year info-year color info-year-2 info-year-2 tab-menu tab-menu"
-        "info info info info-year info-year color info-year-2 info-year-2 tab-menu tab-menu"
-        "info info info info-year info-year color info-year-2 info-year-2 tab-menu tab-menu"
-        "info info info info-year info-year color info-year-2 info-year-2 tab-menu tab-menu"
-        "info info info info-year info-year color info-year-2 info-year-2 tab-menu tab-menu"
-        "info info info info-year info-year color info-year-2 info-year-2 tab-menu tab-menu"
-        "info info info info-year info-year color info-year-2 info-year-2 tab-menu tab-menu"
-        ". . . info-year info-year color info-year-2 info-year-2 tab-menu tab-menu"
-        ". . . info-year info-year color info-year-2 info-year-2 tab-menu tab-menu"
-        ". . . info-year info-year color info-year-2 info-year-2 tab-menu tab-menu";
+        "header header header header header header header header header"
+        "header header header header header header header header header"
+        ". . . info-year info-year info-year info-year tab-menu tab-menu"
+        ". . . info-year info-year info-year info-year tab-menu tab-menu"
+        ". . . info-year info-year info-year info-year tab-menu tab-menu"
+        "info info info info-year info-year info-year info-year tab-menu tab-menu"
+        "info info info info-year info-year info-year info-year tab-menu tab-menu"
+        "info info info info-year info-year info-year info-year tab-menu tab-menu"
+        "info info info info-year info-year info-year info-year tab-menu tab-menu"
+        "info info info info-year info-year info-year info-year tab-menu tab-menu"
+        "info info info info-year info-year info-year info-year tab-menu tab-menu"
+        ". . . info-year info-year info-year info-year tab-menu tab-menu"
+        ". . . info-year info-year info-year info-year tab-menu tab-menu"
+        ". . . info-year info-year info-year info-year tab-menu tab-menu";
 }
 
 .header {
@@ -39,21 +38,43 @@
 }
 
 .info-year {
+    display: grid;
+    grid-template-columns: 1fr 15px 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "first-info-thingy colour second-info-thingy"
+        "first-info-thingy colour second-info-thingy"
+        "first-info-thingy colour second-info-thingy";
     grid-area: info-year;
+    overflow: auto;
+    border: 5px solid aqua;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.427);
 }
 
-.info-year-2 {
-    grid-area: info-year-2;
+.colour {
+    grid-area: colour;
+}
+
+.first-info-thingy {
+    grid-area: first-info-thingy;
+}
+
+.second-info-thingy {
+    grid-area: second-info-thingy;
 }
 
 .info {
     grid-area: info;
 }
 
-.color {
-    grid-area: color;
-    background-color: aqua;
+.color{
+    height:1292px;
+    background-color: aqua
 }
+
+
 
 
 /* blue bar styles */
@@ -89,6 +110,27 @@
 
 
 /* set font-type of all text */
-.text{
+.text {
     font-family: "Comic Sans MS";
+}
+
+.text-box {
+    border: 2px rgb(0, 170, 204) solid;
+    background-color: rgba(130, 130, 130, 0.622);
+    height: 20%;
+    margin-bottom: 175px;
+    margin-top: 20;
+    padding: 5px;
+    text-align: right;
+    overflow-y: auto;
+}
+
+.text-box2 {
+    border: 2px rgb(0, 170, 204) solid;
+    background-color: rgba(130, 130, 130, 0.622);
+    height: 20%;
+    margin-top: 175px;
+    padding: 5px;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.427);
+    overflow-y: auto;
 }
