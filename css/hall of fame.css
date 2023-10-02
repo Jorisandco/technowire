@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr .5fr 1fr;
+    grid-template-rows: 0.5fr 50px 1fr 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "header header header header header header"
+        "header header header header header header"
+        "timeline timeline timeline timeline menu menu"
+        "timeline timeline timeline timeline menu menu"
+        "timeline timeline timeline timeline menu menu"
+        "timeline timeline timeline timeline menu menu";
+    overflow-y: auto;
+    height: 100vh;
+}
+
+.header {
+    grid-area: header;
+}
+
+.menu {
+    grid-area: menu;
+}
+
+.timeline {
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "first-info-thingy-text first-info-thingy-text colour second-info-thingy-text second-info-thingy-text"
+        "first-info-thingy-text first-info-thingy-text colour second-info-thingy-text second-info-thingy-text"
+        "first-info-thingy-text first-info-thingy-text colour second-info-thingy-text second-info-thingy-text"
+        "first-info-thingy-text first-info-thingy-text colour second-info-thingy-text second-info-thingy-text"
+        "first-info-thingy-text first-info-thingy-text colour second-info-thingy-text second-info-thingy-text";
+    grid-area: timeline;
+    overflow-y: auto;
+    border: 5px solid aqua;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.427);
+}
+
+.colour {
+    grid-area: colour;
+}
+
+.first-info-thingy-text {
+    grid-area: first-info-thingy-text;
+}
+
+.second-info-thingy-text {
+    grid-area: second-info-thingy-text;
+}
+
+/* set font-type of all text */
+.text {
+    font-family: "Comic Sans MS";
+    color: white;
+}
+
+.text-box {
+    border: 2px rgb(0, 170, 204) solid;
+    background-color: rgba(130, 130, 130, 0.622);
+    height: 37%;
+    margin-bottom: 260px;
+    margin-top: 20;
+    padding: 5px;
+    text-align: right;
+    overflow-y: auto;
+}
+
+.text-box2 {
+    border: 2px rgb(0, 170, 204) solid;
+    background-color: rgba(130, 130, 130, 0.622);
+    height: 37%;
+    margin-top: 260px;
+    padding: 5px;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.427);
+    overflow-y: auto;
+}
+
+
+/* blue bar styles */
+#header_1 {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    background-color: rgb(0, 209, 209);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+}
+
+/* Keeps company logo size and location just right */
+#header_1 img {
+    max-width: 320px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.color{
+    height:1292px;
+    background-color: aqua
+}

@@ -112,6 +112,7 @@
 /* set font-type of all text */
 .text {
     font-family: "Comic Sans MS";
+    color: white;
 }
 
 .text-box {
