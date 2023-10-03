@@ -1,0 +1,84 @@
+Assembly Language
+
+Year of Publication: 1940s (various)
+Logo: N/A
+Developer(s): Various
+Specific Properties: Low-level language, closely related to machine code.
+More Information: Assembly Language
+Fortran
+
+Year of Publication: 1957
+Logo: N/A
+Developer(s): IBM
+Specific Properties: Known for scientific and engineering applications.
+More Information: Fortran Programming Language
+COBOL
+
+Year of Publication: 1959
+Logo: N/A
+Developer(s): Developed by a committee of experts.
+Specific Properties: Designed for business data processing.
+More Information: COBOL Programming Language
+Lisp
+
+Year of Publication: 1958
+Logo: N/A
+Developer(s): John McCarthy
+Specific Properties: Known for symbolic processing and AI applications.
+More Information: Lisp Programming Language
+C
+
+Year of Publication: 1972
+Logo: N/A
+Developer(s): Dennis Ritchie
+Specific Properties: Influential in the development of many other languages.
+More Information: C Programming Language
+C++
+
+Year of Publication: 1983
+Logo: C++ Logo
+Developer(s): Bjarne Stroustrup
+Specific Properties: Extension of C with object-oriented features.
+More Information: C++ Programming Language
+Java
+
+Year of Publication: 1995
+Logo: Java Logo
+Developer(s): Sun Microsystems (now owned by Oracle Corporation)
+Specific Properties: Designed for portability and cross-platform compatibility.
+More Information: Java Programming Language
+Python
+
+Year of Publication: 1991
+Logo: Python Logo
+Developer(s): Guido van Rossum
+Specific Properties: Known for its readability and versatility.
+More Information: Python Programming Language
+JavaScript
+
+Year of Publication: 1995
+Logo: JavaScript Logo
+Developer(s): Netscape Communications Corporation
+Specific Properties: Used for front-end web development.
+More Information: JavaScript Programming Language
+Ruby
+
+Year of Publication: 1995
+Logo: Ruby Logo
+Developer(s): Yukihiro "Matz" Matsumoto
+Specific Properties: Emphasizes simplicity and productivity.
+More Information: Ruby Programming Language
+Rust
+
+Year of Publication: 2010
+Logo: Rust Logo
+Developer(s): Mozilla Research
+Specific Properties: Focuses on memory safety and system-level programming.
+More Information: Rust Programming Language
+Swift
+
+Year of Publication: 2014
+Logo: Swift Logo
+Developer(s): Apple Inc.
+Specific Properties: Designed for iOS, macOS, watchOS, and tvOS app development.
+More Information: Swift Programming Language
