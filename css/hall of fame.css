@@ -62,8 +62,9 @@
 
 /* set font-type of all text */
 .text {
-    font-family: "Comic Sans MS";
+    font-family: "Agency FB";
     color: white;
+    font: 14px;
 }
 
 .text-box {
@@ -101,8 +102,6 @@
 
 /* Keeps company logo size and location just right */
 #header_1 img {
-    max-width: 320px;
-    height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -126,4 +125,8 @@
 }
 .textcontainer{
     float: left;
+}
+
+h3{
+    font: 20px;
 }
