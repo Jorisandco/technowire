@@ -106,16 +106,16 @@
     overflow-y: auto;
 }
 
-.textcontainer2{float: right;}
+.textcontainer{float: right;}
 
-.image_container2 {
+.image_container{
     float: left;
 }
   
-.image_container{
+.image_container2{
     float: right;
 }
-.textcontainer{
+.textcontainer2{
     float: left;
 }
 
