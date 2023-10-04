@@ -117,6 +117,8 @@
 
 .image_container2 {
     float: left;
+    max-width: 250px;
+    height: auto;
   }
   
 .image_container{
