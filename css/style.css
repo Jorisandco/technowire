@@ -16,8 +16,6 @@
 
 /* Keeps company logo size and location just right */
 #header_1 img {
-    max-width: 320px;
-    height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -27,29 +25,26 @@
     box-sizing: border-box
 }
 
-/* grid panel nice and oganised */
-.container_grid {
+.container_grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.27fr 30px 0.2fr 2fr;
-    grid-auto-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.25fr 0.2fr 1fr;
+    grid-auto-columns: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
-    height: 100%;
+    grid-template-areas:
+        "header header header menu"
+        "text-erea-1 text-erea-1 text-erea-1 menu"
+        "text-erea-2 text-erea-2 text-erea-2 menu";
+    height: 100vh;
 }
 
 .header {
-    grid-area: 1 / 1 / 2 / 5;
+    grid-area: header;
 }
 
-.menu {
-    grid-area: 2 / 4 / 5 / 5;
-}
-
-
-/* text style */
 .text-erea-1 {
-    grid-area: 2 / 1 / 3 / 4;
+    grid-area: text-erea-1;
     color: rgb(255, 255, 255);
     font-size: 25px;
     display: block;
@@ -58,10 +53,16 @@
 }
 
 .text-erea-2 {
-    grid-area: 4 / 1 / 5 / 4;
+    grid-area: text-erea-2;
     color: rgb(255, 255, 255);
     font-size: 25px;
 }
+
+.menu {
+    grid-area: menu;
+}
+
+/* text style */
 
 .textbox {
     border: 2px rgb(0, 170, 204) solid;
@@ -82,4 +83,53 @@
 
 h3 {
     font: 20px;
+}
+
+@media only screen and (max-width: 420px) {
+    .container_grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.2fr 0.25fr 0.2fr 1fr;
+        grid-auto-columns: 1fr;
+        gap: 11px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "menu menu menu menu"
+            "header header header header"
+            "text-erea-1 text-erea-1 text-erea-1 text-erea-1"
+            "text-erea-2 text-erea-2 text-erea-2 text-erea-2";
+        height: 100vh;
+    }
+
+    .header {
+        grid-area: header;
+    }
+
+    .text-erea-1 {
+        grid-area: text-erea-1;
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .text-erea-2 {
+        grid-area: text-erea-2;
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+    }
+
+
+    .flex_img {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #header_1 img {
+        max-width: 250px;
+        height: auto;
+    }
 }
