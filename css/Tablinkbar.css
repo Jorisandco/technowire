@@ -26,7 +26,6 @@
     display: flex;
     text-decoration: none;
     flex-direction: column;
-    unicode-bidi: unset;
     list-style: none;
 }
 
