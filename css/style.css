@@ -24,15 +24,19 @@
 .selection ul li a{
     margin-right: 12px;
     text-decoration: none;
-    background-color: aqua;
+    background-color: rgba(130, 130, 130, 0.627);
     color: dodgerblue;
     transition: 0.6233454545343s;
     padding: 10px;
+    box-shadow: 2px 2px rgba(130, 130, 130, 0.427);
+    border: 1px solid rgb(44, 151, 151);
 }
 
 .selection ul li a:hover{
     background-color: dodgerblue;
-    color: aqua
+    color: aqua;
+    box-shadow: 2px 2px rgba(150, 73, 143, 0.227);
+    font-size: 40px;
 }
 
 /* blue bar styles */
@@ -178,6 +182,13 @@ h3 {
     .selection ul li a{
         font-size: 8px;
         margin-right: 3px;
+    }
+
+    .selection ul li a:hover{
+        background-color: dodgerblue;
+        color: aqua;
+        box-shadow: 2px 2px rgba(150, 73, 143, 0.227);
+        font-size: 8px;
     }
 }
 
