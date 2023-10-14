@@ -37,16 +37,7 @@
     grid-area: tab-menu;
 }
 
-.info-year {
-    display: grid;
-    grid-template-columns: 1fr 15px 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "first-info-thingy colour second-info-thingy"
-        "first-info-thingy colour second-info-thingy"
-        "first-info-thingy colour second-info-thingy";
+.timeline {
     grid-area: info-year;
     overflow: auto;
     border: 5px solid aqua;

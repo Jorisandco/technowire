@@ -1,14 +1,5 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
 body{
     overflow: hidden;
-}
-
-.row_box{
-    display: flex;
 }
 
 /* grid */
@@ -43,20 +34,8 @@ body{
     overflow-y: auto;
     border: 5px solid aqua;
     box-shadow: 2px 2px rgba(0, 0, 0, 0.427);
+    overflow-x: hidden;
 }
-
-.first-info-thingy-text {
-    display: flex;
-    flex-direction: column;
-    width: 45%;
-}
-
-.second-info-thingy-text {
-    display: flex;
-    flex-direction: column;
-    width: 45%;
-}
-
 
 /* blue bar styles */
 #header_1 {
@@ -69,138 +48,34 @@ body{
     height: 100%;
 }
 
-/* Keeps company logo size and location just right */
-#header_1 img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 /* set font-type of all text */
 .text {
     font-family: "Agency FB";
     color: white;
     font: 14px;
-}
+}  
 
-.text-box {
-    border: 2px rgb(0, 170, 204) solid;
-    background-color: rgba(130, 130, 130, 0.622);
-    height: 30%;
-    margin-bottom: 175px;
-    margin-top: 20;
-    padding: 5px;
-    text-align: right;
-    overflow-y: hidden;
-}
-
-.text-box2 {
-    border: 2px rgb(0, 170, 204) solid;
-    background-color: rgba(130, 130, 130, 0.622);
-    height: 30%;
-    margin-top: 175px;
-    padding: 5px;
-    box-shadow: 2px 2px rgba(0, 0, 0, 0.427);
-    overflow-y: hidden;
-}
-
-.textcontainer{float: right;}
-
-.image_container{
-    float: left;
-}
-  
-.image_container2{
-    float: right;
-}
-.textcontainer2{
-    float: left;
-}
-
-.image_container img{
-    max-width: 135px;
-    height: auto;
-}
-
-.image_container2 img{
-    max-width: 135px;
-    height: auto;
-}
-
-h3{
-    font: 20px;
-}
-
-.colour{
-    background-color: aqua;
-    width: 5%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-/* ... (previous CSS rules) ... */
-
-@media screen and (max-width: 420px) {
-    .colour {
-        display: none; /* Hide the blue bar on small screens */
-    }
-
+  @media screen and (max-width: 600px) {
     .container {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 0.5fr 50px 1fr 1fr 1fr 1fr;
         grid-auto-columns: 1fr;
         gap: 0px 0px;
         grid-auto-flow: row;
         grid-template-areas:
-            "header"
-            "menu"
-            "timeline"
-            "timeline"
-            "timeline"
-            "timeline";
+            "header header header"
+            "menu menu menu"
+            "timeline timeline timeline "
+            "timeline timeline timeline "
+            "timeline timeline timeline "
+            "timeline timeline timeline ";
         height: 100vh;
+        overflow: hidden;
     }
-
-    .first-info-thingy-text,
-    .second-info-thingy-text {
-        width: 100%; /* Make the text boxes take the full width of the screen */
-    }
-
-    .text-set-1,
-    .text-set-2 {
-        display: flex;
-        flex-direction: column; /* Display the pairs of years and programming languages below each other on mobile */
-    }
-
-    .image_container,
-    .image_container2 {
-        float: none; /* Remove floating for images */
-    }
-
-    .textcontainer,
-    .textcontainer2 {
-        float: none; /* Remove floating for text containers */
-    }
-
-    .text-box,
-    .text-box2 {
-        border: 2px rgb(0, 170, 204) solid;
-        background-color: rgba(130, 130, 130, 0.622);
-        margin: 10px;
-        padding: 5px;
-        box-shadow: 2px 2px rgba(0, 0, 0, 0.427);
-        overflow-y: auto;
+    #header_1 img{
+        max-width: 240px;
         height: auto;
-        text-align: left; /* Adjust text alignment for small screens */
     }
-
-    .text-box,
-    .text-box2 h3, /* Adjust the heading styles */
-    .text-box2 p {
-        text-align: left;
-    }
-
-
-}
+  }
