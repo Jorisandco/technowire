@@ -68,6 +68,10 @@
     height: auto;
   }
 
+  .image_box{
+    display: flex;
+  }
+
   .left > .content{  
     flex-direction: row-reverse;
   }
@@ -93,6 +97,7 @@
 
     .content{
         display: block;
+        width: 50%;
     }
   
 
