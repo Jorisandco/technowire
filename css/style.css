@@ -24,7 +24,7 @@
 .selection ul li a{
     margin-right: 12px;
     text-decoration: none;
-    background-color: rgba(130, 130, 130, 0.627);
+    background-color: rgba(255, 255, 255, 0.627);
     color: dodgerblue;
     transition: 0.6233454545343s;
     padding: 10px;
@@ -123,6 +123,9 @@ h3 {
     font: 20px;
 }
 
+.tittle{
+    font-size: 50px;
+}
 @media only screen and (max-width: 420px) {
     .container_grid {
         display: grid;

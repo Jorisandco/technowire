@@ -40,6 +40,7 @@
   
   .left {
     left: 0;
+    text-align: left;
   }
   
   
@@ -65,8 +66,22 @@
   }
 
   .image_box img{
-    max-width: 150px;
+    max-width: 100px;
     height: auto;
+    margin-left: 150px;
+  }
+
+  .left .content{
+    justify-content: left;
+  }
+
+  .right .content{
+    justify-content: right;
+  }
+  
+    .right img{
+    margin-right: 150px;
+    margin-left: 0px;
   }
 
   .image_box{
@@ -76,7 +91,6 @@
   .left > .content{  
     flex-direction: row-reverse;
   }
-
   
   @media screen and (max-width: 600px) {
  
@@ -109,6 +123,13 @@
 
     .right > .image_box{
         float: left;
+      }
+
+      .image_box img{
+        max-width: 100px;
+        height: auto;
+        margin-left: 0px;
+        margin-right: 0;
       }
   }
 
